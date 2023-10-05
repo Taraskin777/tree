@@ -1,0 +1,15 @@
+.addBnt {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: rgba(166, 255, 197, 0.543);
+    transition: all 0.3s;
+  
+   //  outline: 2px solid red;
+  }
+}
