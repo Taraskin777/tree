@@ -1,13 +1,13 @@
 import {ModeProvider} from './context';
 import './App.css';
 import './reset.scss';
-import Category from 'components/category/Category';
+import ListOfCategory from 'components/listOfCategory/ListOfCategory';
 
 function App(): JSX.Element {
   return (
     <ModeProvider>
       <div className="App">
-        <Category />
+        <ListOfCategory />
       </div>
     </ModeProvider>
   );
