@@ -1,19 +1,15 @@
-import {useState} from 'react';
+import {ModeProvider} from './context';
 import './App.css';
 import './reset.scss';
 import Category from 'components/category/Category';
 
-function App() {
-  const [test, setTest] = useState<boolean>(false);
-
-  const handleText = (): void => {
-    setTest(!test);
-  };
-
+function App(): JSX.Element {
   return (
-    <div className="App" onClick={handleText}>
-      <Category />
-    </div>
+    <ModeProvider>
+      <div className="App">
+        <Category />
+      </div>
+    </ModeProvider>
   );
 }
 
